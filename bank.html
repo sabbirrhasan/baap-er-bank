@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Baap Er Bank - A Bank Of Your Father</title>
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+</head>
+
+<body>
+    <header class="w-3/4 mx-auto text-center mt-10 mb-10">
+        <h1 class="text-5xl">Welcome To <span class="font-semibold italic text-purple-500">Baap Er Bank's</span>
+            Dashboard 😹
+        </h1>
+    </header>
+    <main>
+        <section class="w-3/4 grid grid-cols-3 gap-4 mx-auto mb-10">
+            <div class="text-white bg-pink-300 p-10 rounded-md">
+                <h3 class="text-2xl">Deposit</h3>
+                <p class="text-3xl font-semibold">$<span id="deposit-amount">00</span></p>
+            </div>
+            <div class="text-white bg-indigo-300 p-10 rounded-md">
+                <h3 class="text-2xl">Withdraw</h3>
+                <p class="text-3xl font-semibold">$<span id="withdraw-amount">00</span></p>
+            </div>
+            <div class="text-white bg-green-300 p-10 rounded-md">
+                <h3 class="text-2xl">Balance</h3>
+                <p class="text-3xl font-semibold">$<span id="balance-amount">720</span></p>
+            </div>
+        </section>
+        <section class="w-3/4 grid grid-cols-2 gap-4 mx-auto mb-20">
+            <div class="bg-yellow-300 p-5 rounded-md">
+                <h3 class="text-white text-3xl text-center mb-3">Deposit Here</h3>
+                <input id="deposit-input" class="block mb-3 pl-2 py-2 w-1/2 mx-auto border-2 rounded" type="text"
+                    placeholder="$ amount you want to deposit">
+                <button id="deposit-btn"
+                    class="text-2xl font-semibold bg-purple-600 text-white px-4 py-1 block mx-auto rounded">Deposit
+                    Now</button>
+            </div>
+            <div class="bg-red-300 p-5 rounded-md">
+                <h3 class="text-white text-3xl text-center mb-3">Withdraw Here</h3>
+                <input id="withdraw-input" class="block mb-3 pl-2 py-2 w-1/2 mx-auto border-2 rounded" type="text"
+                    placeholder="$ amount you want to withdraw">
+                <button id="withdraw-btn"
+                    class="text-2xl font-semibold bg-purple-600 text-white px-4 py-1 block mx-auto rounded">Withdraw
+                    Now</button>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p class="text-center bg-indigo-500	text-white p-3">&copy; Sabbir Hasan | This Web Page Is Designed by Sabbir
+            With Love ❤️</p>
+    </footer>
+    <script src="js/bank.js"></script>
+</body>
+
+</html>
